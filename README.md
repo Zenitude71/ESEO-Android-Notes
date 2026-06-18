@@ -15,14 +15,10 @@ Le passage vers la version 2.8.0 de navigation-compose pour implémenter la navi
 
 # Captures d'écrans
 
-Liste des notes
 ![Texte alternatif](./captures/Liste_notes.png "Liste des notes")
 
-Edition d'une note
 ![Texte alternatif](./captures/Edition_note.png "Edition note")
 
-Suppression d'une note
 ![Texte alternatif](./captures/Suppression_note.png "Suppression note")
 
-Vidéo explicative
 ![Texte alternatif](./captures/Utilisation.gif "Vidéo explicative")
