@@ -5,6 +5,8 @@ hilt = "2.51.1"
 hiltNavigationCompose = "1.2.0"
 navigationCompose = "2.7.7"
 kotlinxSerialization = "1.6.3"
+androidGradlePlugin = "8.2.2"
+kotlin = "1.9.22"
 
 [libraries]
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
@@ -17,6 +19,8 @@ navigation-compose = { group = "androidx.navigation", name = "navigation-compose
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
 [plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.9.22" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
