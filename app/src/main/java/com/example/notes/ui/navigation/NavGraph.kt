@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
 import com.example.notes.ui.navigation.routes.NoteListRoute
 import com.example.notes.ui.navigation.routes.NoteEditRoute
 import com.example.notes.ui.noteedit.NoteEditScreen
@@ -22,7 +23,9 @@ fun NotesApp() {
             )
         }
 
-        composable<NoteEditRoute> {
+        composable<NoteEditRoute> { backStackEntry ->
+            val route: NoteEditRoute = backStackEntry.toRoute()
+
             NoteEditScreen(
                 onBack = { navController.popBackStack() }
             )

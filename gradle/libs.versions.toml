@@ -3,13 +3,28 @@ room = "2.6.1"
 ksp = "1.9.22-1.0.17"
 hilt = "2.51.1"
 hiltNavigationCompose = "1.2.0"
-navigationCompose = "2.7.7"
+navigationCompose = "2.8.0"
 kotlinxSerialization = "1.6.3"
-androidGradlePlugin = "8.2.2"
+androidGradlePlugin = "8.7.0"
 kotlin = "1.9.22"
-lifecycleRuntimeComposeAndroid = "2.10.0"
+lifecycleRuntimeComposeAndroid = "2.8.0"
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+material = "1.14.0"
+constraintlayout = "2.2.1"
+composeUi = "1.6.7"
+composeMaterial3 = "1.2.1"
+activityCompose = "1.8.2"
 
 [libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeUi" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial3" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeUi" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
